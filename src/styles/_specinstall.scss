@@ -1,0 +1,86 @@
+.spec-install {
+    height: 600px;
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center; // Added by AG
+    text-transform: uppercase; // Added by AG
+    background-image: url(../../public/images/wave-blue-light.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 200%;
+
+    @media only screen and (min-width: $tablet) {
+		flex-direction: row;
+        background-size: 100%;
+	}
+    
+      .spec {
+        background-color: $darkblue;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 50%;
+        padding: 2em;
+        color: white;
+        font-size: 1.1em;
+        z-index: -1;
+
+        @media only screen and (min-width: $tablet) {
+            height: 100%;     
+        }
+
+        button { // Added by AG
+            background-color: $darkblue;
+            color: white;
+            padding: 10px;
+            text-transform: uppercase;
+            border: 1px solid white;
+            font-weight: bold;
+            cursor: pointer;
+
+            @media only screen and (min-width: $tablet) {
+                background-color: $lightblue;
+                border: none; 
+            }
+          }
+    }
+    .install {
+        background-image: url('../../public/images/map.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 50%;
+        padding: 3em 3em 0;
+        color: $greyText;
+        font-size: 1.2em;
+        z-index: -1;
+
+
+        @media only screen and (min-width: $tablet) {
+            height: 100%;
+        }
+
+        button {
+            background-color: transparent;
+            color: $greyText;
+            padding: 10px;
+            text-transform: uppercase;
+            border: 2px solid $greyText;
+            font-size: 0.7em;
+            font-weight: bold;
+            cursor: pointer;
+
+            @media only screen and (min-width: $tablet) {
+                background-color: $lightblue;
+                border: none;
+                color: white;
+            }
+        }
+    }
+}

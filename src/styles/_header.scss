@@ -1,0 +1,80 @@
+// I think for the background image slider, we should put the images inside div's
+// in the HTML, and position text and button absolutely (over top the slider)
+// within the Header component
+
+.header {
+  height: 600px;
+  color: white;
+  background-color: grey;
+  background-image: url(../../public/images/wave-white.png); // url for a background image: url("../../public/images/header-slider-img-01.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 200%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+  @media only screen and (min-width: $tablet) {
+    background-size: 100%;
+  }
+
+  // Legacy stuff we can probably delete once we have a working nav/header
+  // .header-logo-container {
+  //   width: 100px;
+
+  //   .logo {
+  //     width: 100%;
+  //   }
+  // }
+  .primary-links {
+    display: none;
+  }
+  .header-overlay {
+    // height: 80%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+      text-transform: uppercase;
+      font-size: 1.6em;
+      
+    }
+    .btn-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @media only screen and (min-width: $tablet) {
+        max-width: 400px;
+        flex-direction: row;
+        justify-content: center;
+      }
+
+      a:visited {
+        color: white;
+      }
+    
+      button {
+        width:13em;
+        padding: 10px;
+        margin:25px 0 10px;
+        align-content: center;
+        text-transform: uppercase;
+        background-color: rgba(0, 0, 0, 0);
+        color: $primaryText;
+        border: 1px solid $primaryText;
+        cursor: pointer;
+
+        @media only screen and (min-width: $tablet) {
+          margin-right: 15px;
+        }
+      }
+    }
+    
+  }
+}

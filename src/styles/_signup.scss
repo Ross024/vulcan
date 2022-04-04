@@ -1,0 +1,58 @@
+.news-letter-signup{ // Added by AG
+    display: flex;
+    flex-direction: column;
+    height:125px;
+    background-color: #bedcef; 
+    display:flex;
+    padding: 1em 0.8em;
+    color: #154c79;
+    text-align: center;
+
+    @media only screen and (min-width: $tablet) {
+		flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 75px;
+	}
+
+    h3 {
+        font-size: 1em;
+
+        @media only screen and (min-width: $tablet) {
+            width: 50%;
+        }
+    }
+
+    .signup-form {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media only screen and (min-width: $tablet) {
+            width: 50%;
+            justify-content: flex-start;
+        }
+
+        input {
+            width: 350px;
+            margin-right: 8px;
+            padding: 8px;
+        }
+        button {
+            width: 30%;
+            padding: 8px;
+            text-transform: uppercase;
+            background-color: #429bd6;
+            display: inline-block;
+            border: none;
+            color: white;
+            font-size: 1em;
+            font-weight: bold;
+            
+        }
+    }
+}
+
+.signup {
+    // background-color: chocolate;
+}

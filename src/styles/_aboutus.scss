@@ -1,0 +1,33 @@
+.about-us {
+  background-image: url("../../public/images/bg-section-about-us.jpg");
+  // background-size: 400% 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  color: $primaryText;
+  text-align: center;
+  padding: 8em 2em 5em;
+
+  h1 {
+    text-transform: uppercase;
+  }
+  p {
+    font-size: 1.1em;
+    line-height: 1.2em;
+  }
+  button {
+    padding: 12px;
+    margin: 2em auto 0;
+    width: 150px;
+    cursor: pointer;
+    align-content: center;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0);
+    color: $primaryText;
+    border: 1px solid $primaryText;
+    font-weight: bold;
+  }
+}

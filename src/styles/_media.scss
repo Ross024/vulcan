@@ -1,0 +1,12 @@
+.media {
+  height: 50vh;
+  background-color: $lightblue; // Changed by AG
+  display: flex; // Added by AG
+  justify-content: center; // Added by AG
+  align-items: center;
+
+  .vulcan-video {
+    width: 80%;
+    padding: 0; // Added by AG
+  }
+}

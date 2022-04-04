@@ -1,0 +1,5 @@
+Things to Address before turn-in:
+
+- border around video is weird
+- dynamic image rendering (depending on screen width)
+- get rid of bottom border on Customized items on mobile mode

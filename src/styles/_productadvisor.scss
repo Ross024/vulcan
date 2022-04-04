@@ -1,0 +1,83 @@
+.product-advisor {
+  height: 600px;
+  background-color: $darkblue;
+  display: flex;
+  flex-direction: column;
+  text-align: center; // Added by AG
+  padding: 15px;  // Added by AG
+  color: white;
+
+  @media only screen and (min-width: $tablet) {
+    height: 500px;
+  }
+
+  @media only screen and (min-width: $desktop) {
+    height: 350px;
+  }
+
+  .product-advisor-heading {
+    border-bottom: 1px solid white;
+    margin-bottom: 10px;
+
+    h2 {
+      text-transform: uppercase;
+    }
+    p {
+      @media only screen and (min-width: $tablet) {
+        color: $lightblue;
+      }
+    }
+  }
+
+  .pa-form {
+    display: flex;
+    flex-direction: column;
+
+    @media only screen and (min-width: $tablet) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+
+    @media only screen and (min-width: $desktop) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .select-type {
+        display: flex;
+        flex-direction: column;
+
+        @media only screen and (min-width: $desktop) {
+          width: 20%;
+        }
+      label {
+        text-align: left;
+        margin: 10px 0;
+        font-size: 0.8em;
+        font-weight: bold;
+
+        @media only screen and (min-width: $desktop) {
+          text-transform: uppercase;
+        }
+      }
+      select {
+        height: 35px;
+        background-color: #bbbbbb;
+        color: $greyText;
+      }
+    }
+  }
+
+  button { // Added by AG
+    width: 100%;
+    margin:40px 0;
+    background-color: $lightblue;
+    text-transform: uppercase;
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+  }
+}
+  
