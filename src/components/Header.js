@@ -1,6 +1,7 @@
 import VulcanIcon from "./VulcanIcon";
 import Carousel from "./Carousel";
 import NavMain from "./NavMain";
+import NavMobile from "./NavMobile";
 
 // import header1 from '../../public/images/header-slider-img-01.jpg'
 
@@ -26,11 +27,12 @@ function Header() {
           </li>
         </ul>
       </div>
+
       <NavMain />
+      <NavMobile />
+      <Carousel />
 
-        <Carousel />
-
-        <div className="text-container">
+      <div className="text-container">
         <h1>
           We design and fabricate indestructible wastewater screens. Enough
           said.

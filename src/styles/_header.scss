@@ -32,36 +32,57 @@
   // }
 
   .links{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    position: absolute;
-    top: 0px;
-    z-index: 5;
+    display: none;
+    @media only screen and (min-width: $tablet) {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      position: absolute;
+      top: 0px;
+      z-index: 5;
+    }
   }
 
   .primary-links {
-    // display: none;
-    display: flex;
-    padding-right: 40px;
+    font-family: 'Roboto Condensed';
     justify-content: space-between;
-    width: 25%;
-
+    display: flex;
+    padding-left: 40px;
+    
     a {
       color: white;
     }
+
+    @media only screen and (min-width: $tablet) {
+      width: 275px;
+      font-size: .9em;
+    }
+
+    @media only screen and (min-width: $desktop) {
+      width: 320px;
+    }
+
   }
 
   .secondary-links {
-    // display: none;
+    font-family: 'Roboto Condensed';
     display: flex;
-    padding-right: 40px;
     justify-content: space-between;
-    width: 25%;
+    padding-right: 40px;
 
     a {
       color: white;
     }
+
+    @media only screen and (min-width: $tablet) {
+      width: 275px;
+      font-size: .9em;
+    }
+
+    @media only screen and (min-width: $desktop) {
+      width: 320px;
+    }
+
   }
 
   // .header-logo-container {
@@ -108,14 +129,17 @@
       
     }
     .btn-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
+      
       @media only screen and (min-width: $tablet) {
         max-width: 400px;
         flex-direction: row;
         justify-content: center;
+      }
+
+      @media only screen and (min-width: $desktop) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
 
       a:visited {
@@ -123,18 +147,21 @@
       }
     
       button {
-        width:13em;
-        padding: 10px;
-        margin:25px 0 10px;
-        align-content: center;
-        text-transform: uppercase;
-        background-color: rgba(0, 0, 0, 0);
-        color: $primaryText;
-        border: 1px solid $primaryText;
-        cursor: pointer;
-
+        
         @media only screen and (min-width: $tablet) {
           margin-right: 15px;
+        }
+
+        @media only screen and (min-width: $desktop) {
+          width:13em;
+          padding: 10px;
+          margin:25px 0 10px;
+          align-content: center;
+          text-transform: uppercase;
+          background-color: rgba(0, 0, 0, 0);
+          color: $primaryText;
+          border: 1px solid $primaryText;
+          cursor: pointer;
         }
       }
     }
