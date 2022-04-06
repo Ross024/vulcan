@@ -1,3 +1,39 @@
 .nav-main {
-    display: none;
+    //display: none;
+    position: absolute;
+    top: 50px;
+    z-index: 10;
+    width: 600px;
+    text-align: center;
+
+    .header-logo-container {
+        height: auto;
+        position: absolute;
+        top: 0px;
+        z-index: 1;
+        width: 100%;
+    }
+
+    ul {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        position: relative;
+        top: 125px;
+        padding: 1rem 1.5rem;
+        background-color: rgba(50, 50, 50, 0.6);
+        color: white;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+    a {
+        color: white;
+    }
+
+    svg {
+        height: 100px;
+        width: 100%;
+    }
 }

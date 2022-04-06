@@ -30,9 +30,48 @@
   //     width: 100%;
   //   }
   // }
-  .primary-links {
-    display: none;
+
+  .links{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    z-index: 5;
   }
+
+  .primary-links {
+    // display: none;
+    display: flex;
+    padding-right: 40px;
+    justify-content: space-between;
+    width: 25%;
+
+    a {
+      color: white;
+    }
+  }
+
+  .secondary-links {
+    // display: none;
+    display: flex;
+    padding-right: 40px;
+    justify-content: space-between;
+    width: 25%;
+
+    a {
+      color: white;
+    }
+  }
+
+  // .header-logo-container {
+  //   height: 43%;
+  //   position: absolute;
+  //   top: -161px;
+  //   z-index: 1;
+  //   width: 15%;
+  //   bottom: 40px;
+  // }
 
   button {
     width:13em;

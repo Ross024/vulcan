@@ -9,11 +9,12 @@ import SpecInstall from "./components/SpecInstall";
 import Footer from "./components/Footer";
 
 
+
 function App() {
   return (
     <div className="App">
       <Header />
-      <NavMain />
+      {/* <NavMain /> */}
       <Customized />
       <ProductAdvisor />
       <AboutUs />

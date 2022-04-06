@@ -1,18 +1,22 @@
 import VulcanIcon from "./VulcanIcon";
 import Carousel from "./Carousel";
+import NavMain from "./NavMain";
+
 // import header1 from '../../public/images/header-slider-img-01.jpg'
 
 function Header() {
   return (
     <div className="header">
-      {/* <div>
+      <div className="links">
         <ul className="primary-links">
-          <li>
-            <a href="#0">INSTALL MAP</a>
-          </li>
-          <li>
-            <a href="#0">PRODUCT LITERATURE</a>
-          </li>
+            <li>
+              <a href="#0">INSTALL MAP</a>
+            </li>
+            <li>
+              <a href="#0">PRODUCT LITERATURE</a>
+            </li>
+        </ul>
+        <ul className="secondary-links">          
           <li>
             <a href="#0"></a>
           </li>
@@ -21,10 +25,10 @@ function Header() {
             <a href="#0">CONTACT US</a>
           </li>
         </ul>
-      </div> */}
+      </div>
+      <NavMain />
 
         <Carousel />
-
 
         <div className="text-container">
         <h1>
@@ -35,9 +39,7 @@ function Header() {
         <button> View Services</button>
       </div>
 
-      {/* <div className="header-logo-container">
-          <VulcanIcon />
-        </div> */}
+      
 
 
     </div>
