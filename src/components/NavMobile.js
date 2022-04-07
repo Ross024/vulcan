@@ -16,6 +16,8 @@ function NavMobile() {
                 <li><a href="#0">Parts</a></li>
                 <li><a href="#0">News</a></li>
                 <li><a href="#0">Contacts</a></li>
+                <li><a href="#0">Installation Map</a></li>
+                <li><a href="#0">Product Literature</a></li>
             </ul>
         </nav>
 

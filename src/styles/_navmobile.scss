@@ -1,15 +1,78 @@
+:root{
+    --white: #f9f9f9;
+    --black: #36383F;
+    --grey: #85888C;
+}
+
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--white);
+    font-family: "Roboto", sans-serif;
+}
+
+
+
+ul{
+    list-style: none;
+    text-align: left;
+}
+
 .mobileHeader {
-    display: none;
-    height: 300px;
+    // display: none;
+    height: 320px;
     width: 100%;
     z-index: 10;
     position: absolute;
     left: 0;
     top: 0;
+    // background-color: rgba(50,50,50,0.5);
 
     .logo {
         width: 150px;
     }
+}
+
+.mobileLogo {
+    text-decoration: none;
+    position: relative;
+    top: -260px;
+    left: -95px;
+}
+
+/* Nav menu */
+// .nav
+.mobileNav{
+    width: 100%;
+    //position: fixed;
+    background-color: rgba(50, 50, 50, 0.5);
+    overflow: hidden;
+    position: relative;
+    top: -520px;
+}
+
+// .menu a
+.mobileMenu a{
+    display: block;
+    padding: .5rem;
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+// .menu a:hover
+.mobileMenu a:hover{
+    background-color: var(--grey);
+}
+
+// .nav
+.mobileNav{
+    max-height: 0;
+    transition: max-height .5s ease-out;
 }
 
 /* Menu Icon */
@@ -47,4 +110,29 @@
 
 .hamb-line::after{
     top: -5px;
+}
+
+.side-menu {
+    display: none;
+}
+
+/* Toggle menu icon */
+
+.side-menu:checked ~ nav{
+    max-height: 100%;
+}
+
+.side-menu:checked ~ .hamb .hamb-line {
+    background: transparent;
+}
+
+.side-menu:checked ~ .hamb .hamb-line::before {
+    transform: rotate(-45deg);
+    top:0;
+
+}
+
+.side-menu:checked ~ .hamb .hamb-line::after {
+    transform: rotate(45deg);
+    top:0;
 }
