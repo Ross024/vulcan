@@ -36,6 +36,10 @@ ul{
     .logo {
         width: 150px;
     }
+
+    @media only screen and (min-width: $tablet) {
+        display: none;
+    }
 }
 
 .mobileLogo {
