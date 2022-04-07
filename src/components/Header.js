@@ -2,6 +2,8 @@ import VulcanIcon from "./VulcanIcon";
 import Carousel from "./Carousel";
 import NavMain from "./NavMain";
 import NavMobile from "./NavMobile";
+import LocalPhoneRoundedIcon from '@mui/icons-material/LocalPhoneRounded';
+import EmailRoundedIcon from '@mui/icons-material/EmailRounded';
 
 // import header1 from '../../public/images/header-slider-img-01.jpg'
 
@@ -21,9 +23,9 @@ function Header() {
           <li>
             <a href="#0"></a>
           </li>
-          <li>+1 712-642-2755</li>
+          <li><LocalPhoneRoundedIcon />+1 712-642-2755</li>
           <li>
-            <a href="#0">CONTACT US</a>
+            <a href="#0"><EmailRoundedIcon />CONTACT US</a>
           </li>
         </ul>
       </div>
