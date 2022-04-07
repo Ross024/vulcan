@@ -6,7 +6,9 @@
   align-items: center;
 
   .vulcan-video {
-    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    aspect-ratio: 17 / 10;
     padding: 0; // Added by AG
   }
 }

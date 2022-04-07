@@ -11,6 +11,10 @@
       background-size: 100%;
     }
 
+    @media only screen and (min-width: $desktop) {
+      padding: 1em 1em 20em;
+    }
+
     .cust-header {
       padding: 0 2em;
 
@@ -37,9 +41,7 @@
       align-items: center;
 
       // Trying to use this code to delete bottom border for service on bottom child (Sludge Thickening)
-      // :last-child {
-      //   border: none;
-      // }
+     
 
       @media only screen and (min-width: $tablet) {
         flex-direction: row;
@@ -94,6 +96,11 @@
             }
           }
         }
+
+        &:last-child {
+          border: none;
+        }
+
       }
     }
   }

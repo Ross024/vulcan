@@ -7,10 +7,10 @@
   height: 600px;
   color: white;
   background-color: grey;
-  background-image: url(../../public/images/wave-white.png); // url for a background image: url("../../public/images/header-slider-img-01.jpg");
-  background-repeat: no-repeat;
-  background-position: bottom left;
-  background-size: 200%;
+  // background-image: url(../../public/images/wave-white.png); // url for a background image: url("../../public/images/header-slider-img-01.jpg");
+  // background-repeat: no-repeat;
+  // background-position: bottom left;
+  // background-size: 200%;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -21,15 +21,9 @@
     background-size: 100%;
   }
 
-  
-  // Legacy stuff we can probably delete once we have a working nav/header
-  // .header-logo-container {
-  //   width: 100px;
-
-  //   .logo {
-  //     width: 100%;
-  //   }
-  // }
+  .swiper {
+    height: 100%;
+  }
 
   .links{
     display: none;
@@ -84,15 +78,6 @@
     }
 
   }
-
-  // .header-logo-container {
-  //   height: 43%;
-  //   position: absolute;
-  //   top: -161px;
-  //   z-index: 1;
-  //   width: 15%;
-  //   bottom: 40px;
-  // }
 
   button {
     width:13em;
@@ -164,7 +149,6 @@
           cursor: pointer;
         }
       }
-    }
-    
+    }  
   }
 }

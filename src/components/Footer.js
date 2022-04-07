@@ -1,8 +1,11 @@
 import VulcanIcon from './VulcanIcon';
-import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import LocalPhoneRoundedIcon from '@mui/icons-material/LocalPhoneRounded';
-import EmailRoundedIcon from '@mui/icons-material/EmailRounded';
+// import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
+// import LinkedInIcon from '@mui/icons-material/LinkedIn';
+// import LocalPhoneRoundedIcon from '@mui/icons-material/LocalPhoneRounded';
+// import EmailRoundedIcon from '@mui/icons-material/EmailRounded';
+
+// @material-ui/icons/
+
 
 import React from 'react'
 
@@ -12,14 +15,14 @@ function Footer() {
       <VulcanIcon style={{width: '100px'}} />
       <div className="footer-info">
         <div className="links">
-          <FacebookRoundedIcon />
-          <LinkedInIcon />
+          {/* <FacebookRoundedIcon />
+          <LinkedInIcon /> */}
           <div className="type-box">
-            <LocalPhoneRoundedIcon />
+            {/* <LocalPhoneRoundedIcon /> */}
             <p>+1 712-642-2755</p>
           </div>
           <div className="type-box">
-            <EmailRoundedIcon />
+            {/* <EmailRoundedIcon /> */}
             <p>Contact Us</p>
           </div>
         </div>   

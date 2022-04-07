@@ -27,11 +27,9 @@ function Header() {
           </li>
         </ul>
       </div>
-
       <NavMain />
       <NavMobile />
       <Carousel />
-
       <div className="text-container">
         <h1>
           We design and fabricate indestructible wastewater screens. Enough
@@ -40,10 +38,9 @@ function Header() {
         <button>View Products</button>
         <button> View Services</button>
       </div>
-
-      
-
-
+      <div className="wave-wrapper">
+        <img src="images/wave-white.png" alt="decorative" />
+      </div>
     </div>
   );
 }
