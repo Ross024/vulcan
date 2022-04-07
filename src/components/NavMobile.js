@@ -3,6 +3,8 @@ import VulcanIcon from "./VulcanIcon"
 function NavMobile() {
   return (
     <header className="mobileHeader">
+        <div className="mobile-grey-background"></div>
+
         <a href="#" className="mobileLogo"><VulcanIcon /></a>
 
         <input className="side-menu" type="checkbox" id="side-menu"/>
@@ -20,7 +22,6 @@ function NavMobile() {
                 <li><a href="#0">Product Literature</a></li>
             </ul>
         </nav>
-
     </header>  
   )
 }
