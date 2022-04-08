@@ -6,6 +6,7 @@
     text-align:center; // Added by AG
     padding: 1em 1em 8em;
     color: $greyText;
+    position: relative;
 
     @media only screen and (min-width: $tablet) {
       background-size: 100%;
@@ -13,6 +14,34 @@
 
     @media only screen and (min-width: $desktop) {
       padding: 1em 1em 20em;
+    }
+
+    .wave-wrapper{
+      position: absolute;
+      top: -73px;
+      left: 0;
+      z-index: 1;
+      right: 0;
+      overflow: hidden;
+      @media only screen and (min-width: $desktop) {
+        top: -124px;
+      }
+      img{
+        max-width: 1220px;
+        display: block;
+        position: relative;
+        left: -141px;
+        height: 78px;
+        @media only screen and (min-width: $tablet) {
+          height: 77px;
+          left: 0px;
+        }
+        @media only screen and (min-width: $desktop) {
+            max-width: 100%;
+            height: 126px;
+        }
+            
+      }
     }
 
     .cust-header {

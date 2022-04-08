@@ -5,8 +5,6 @@ import NavMobile from "./NavMobile";
 import LocalPhoneRoundedIcon from '@mui/icons-material/LocalPhoneRounded';
 import EmailRoundedIcon from '@mui/icons-material/EmailRounded';
 
-// import header1 from '../../public/images/header-slider-img-01.jpg'
-
 function Header() {
   return (
     <div className="header">
@@ -40,9 +38,7 @@ function Header() {
         <button>View Products</button>
         <button> View Services</button>
       </div>
-      <div className="wave-wrapper">
-        <img src="images/wave-white.png" alt="decorative" />
-      </div>
+      
     </div>
   );
 }

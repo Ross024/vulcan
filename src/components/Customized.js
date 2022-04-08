@@ -3,6 +3,9 @@ import React from 'react'
 function Customized() {
   return (
     <div className='customized'>
+        <div className="wave-wrapper">
+            <img src="images/wave-white.png" alt="decorative" />
+        </div>
         <div className='customized-landing'>
             <div className="cust-header">
             <h2>Customized Per Order</h2>
