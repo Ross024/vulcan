@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/vulcan/static/css/main.34a1c70a.css",
+    "main.js": "/vulcan/static/js/main.7c217a9b.js",
+    "static/media/bg-section-about-us.jpg": "/vulcan/static/media/bg-section-about-us.bf4ea90080ba7709d300.jpg",
+    "static/media/map.jpg": "/vulcan/static/media/map.cf6818abddb411a7ab28.jpg",
+    "index.html": "/vulcan/index.html",
+    "main.34a1c70a.css.map": "/vulcan/static/css/main.34a1c70a.css.map",
+    "main.7c217a9b.js.map": "/vulcan/static/js/main.7c217a9b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.34a1c70a.css",
+    "static/js/main.7c217a9b.js"
+  ]
+}
